@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fracar.controller.LoginController">
+   <children>
+      <Label fx:id="lblLogin" layoutX="326.0" layoutY="105.0" text="Login">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="326.0" layoutY="191.0" text="Username" />
+      <TextField fx:id="txtfldUsername" layoutX="326.0" layoutY="208.0" promptText="Username" />
+      <Label layoutX="326.0" layoutY="241.0" text="Password" />
+      <PasswordField fx:id="pwfldPassword" layoutX="326.0" layoutY="258.0" onAction="#loginOnAction" promptText="Password" />
+      <Button fx:id="btnLogin" layoutX="416.0" layoutY="309.0" mnemonicParsing="false" onAction="#loginOnAction" text="Confirm" />
+      <Button fx:id="btnExit" layoutX="327.0" layoutY="309.0" mnemonicParsing="false" onAction="#exitOnAction" text="Exit" />
+
+   </children>
+</AnchorPane>

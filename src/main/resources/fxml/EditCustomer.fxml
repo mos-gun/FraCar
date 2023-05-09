@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="paneEditCustomer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fracar.controller.EditCustomerController">
+   <children>
+      <Text layoutX="27.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer modification form:">
+         <font>
+            <Font size="16.0" />
+         </font></Text>
+      <Label fx:id="lblCustomerNo" layoutX="272.0" layoutY="45.0" text="Customer number:" />
+      <TextField fx:id="txtfldCustomerNo" layoutX="384.0" layoutY="41.0" onAction="#searchCustomerOnAction" prefHeight="25.0" prefWidth="85.0" promptText="CustomerNo." />
+      <Label fx:id="lblGender" layoutX="272.0" layoutY="105.0" text="Gender:" />
+      <CheckBox fx:id="cbxGenderMale" layoutX="327.0" layoutY="92.0" mnemonicParsing="false" onAction="#chooseGenderMale" text="Male" />
+      <CheckBox fx:id="cbxGenderFemale" layoutX="327.0" layoutY="118.0" mnemonicParsing="false" onAction="#chooseGenderFemale" text="Female" />
+      <Label fx:id="lblDOB" layoutX="481.0" layoutY="93.0" text="Date of Birth:" />
+      <DatePicker fx:id="dateDOB" layoutX="481.0" layoutY="110.0" prefHeight="25.0" prefWidth="167.0" />
+      <Label layoutX="274.0" layoutY="160.0" text="First name" />
+      <TextField fx:id="txtfldFirstName" layoutX="273.0" layoutY="177.0" prefHeight="25.0" prefWidth="167.0" promptText="First name" />
+      <Label layoutX="482.0" layoutY="160.0" text="Last name" />
+      <TextField fx:id="txtfldLastName" layoutX="482.0" layoutY="177.0" prefHeight="25.0" prefWidth="167.0" promptText="Last name" />
+      <Label layoutX="274.0" layoutY="227.0" text="Street name" />
+      <TextField fx:id="txtfldStreetName" layoutX="273.0" layoutY="244.0" prefHeight="25.0" prefWidth="167.0" promptText="Street name" />
+      <Label layoutX="482.0" layoutY="227.0" text="House no." />
+      <TextField fx:id="txtfldHouseNo" layoutX="481.0" layoutY="244.0" prefHeight="25.0" prefWidth="85.0" promptText="HouseNo." />
+      <Label layoutX="273.0" layoutY="294.0" text="Zip code" />
+      <TextField fx:id="txtfldZipCode" layoutX="272.0" layoutY="311.0" prefHeight="25.0" prefWidth="85.0" promptText="Zip code" />
+      <Label layoutX="483.0" layoutY="294.0" text="City" />
+      <TextField fx:id="txtfldCity" layoutX="481.0" layoutY="311.0" prefHeight="25.0" prefWidth="167.0" promptText="City" />
+      <Label layoutX="274.0" layoutY="361.0" text="Phone no." />
+      <TextField fx:id="txtfldPhoneNo" layoutX="273.0" layoutY="380.0" prefHeight="25.0" prefWidth="167.0" promptText="PhoneNo." />
+      <Label layoutX="482.0" layoutY="361.0" text="Email address" />
+      <TextField fx:id="txtfldEmail" layoutX="482.0" layoutY="378.0" prefHeight="25.0" prefWidth="167.0" promptText="Email" />
+      <Button fx:id="btnUpdateCustomer" layoutX="593.0" layoutY="428.0" mnemonicParsing="false" onAction="#updateCustomerOnAction" text="Update" />
+      <Button fx:id="btnRemoveCustomer" layoutX="481.0" layoutY="428.0" mnemonicParsing="false" onAction="#removeCustomerOnAction" text="Remove" />
+      <Button fx:id="btnCancel" layoutX="734.0" layoutY="14.0" mnemonicParsing="false" onAction="#cancelOnAction" text="Cancel" />
+   </children>
+</AnchorPane>
